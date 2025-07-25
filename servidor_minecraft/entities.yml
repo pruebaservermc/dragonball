@@ -146,7 +146,7 @@ world-settings:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
-    JinRyuu-DragonBC-common-Npcs-EntityNamekFrog:
+    net-minecraft-entity-item-EntityMinecartChest:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
@@ -159,6 +159,18 @@ world-settings:
       never-ever-tick: false
       tick-interval: 1
     JinRyuu-DragonBC-common-Npcs-EntityMasterEnma:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    JinRyuu-DragonBC-common-Npcs-EntityHell02:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    JinRyuu-DragonBC-common-Npcs-EntityHell01:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    JinRyuu-DragonBC-common-Npcs-EntityNamekFrog:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
@@ -183,10 +195,6 @@ world-settings:
       never-ever-tick: false
       tick-interval: 1
     JinRyuu-DragonBC-common-Npcs-db-EntityBearThief:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    net-minecraft-entity-item-EntityMinecartChest:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1

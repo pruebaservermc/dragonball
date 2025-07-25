@@ -7452,3 +7452,12 @@ Caused by: java.lang.IllegalArgumentException
 [13:30:07] [Server thread/INFO] []: lii: Gave lii some 0 (AIR)[m
 [13:30:25] [Server thread/INFO] []: lii: Gave lii some 4338 (JINRYUUDRAGONBLOCKC_ITEMDINOMEATCOOKEDBIG)[m
 [13:30:28] [Server thread/INFO] []: lii: Gave lii some 4338 (JINRYUUDRAGONBLOCKC_ITEMDINOMEATCOOKEDBIG)[m
+[13:33:05] [Server thread/INFO] [jinryuujrmcore]: lii received the Legendary status effect!
+[13:33:05] [Server thread/INFO] [jinryuujrmcore]: Legendary config effect - Chance being: 10%
+[13:38:21] [Server thread/INFO] [jinryuudragonblockc]: lii has died
+[13:38:21] [Server thread/INFO] [jinryuujrmcore]: lii died! Last known attack was 75 seconds ago by Shadow Dummy
+[13:38:27] [Server thread/INFO] [journeymap]: /workspaces/dragonball/servidor_minecraft/config/JourneyMapServer/DIM22.cfg not found!
+[13:38:27] [Server thread/INFO] [journeymap]: Attempting to create new config file for: DIM22
+[13:38:27] [Server thread/INFO] [jinryuudragonblockc]: Snake Way Spawned
+[13:38:29] [Server thread/INFO] [jinryuujrmcore]: lii Has died and gone to Otherworld.
+[13:39:09] [Server thread/INFO] []: lii: Set own game mode to CREATIVE mode[m
