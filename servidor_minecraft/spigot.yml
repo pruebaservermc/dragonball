@@ -11,20 +11,20 @@
 # Forums: http://www.spigotmc.org/forum/
 
 config-version: 7
-settings:
-  fullMatchRate: 10
-  sample-count: 12
-  late-bind: false
-  netty-threads: -1
-  timeout-time: 90
-  restart-on-crash: true
-  restart-script: ./start.sh
-  player-shuffle: 0
-  bungeecord: false
 commands:
   log: true
   tab-complete: true
   silent-commandblock-console: false
+settings:
+  late-bind: false
+  sample-count: 12
+  fullMatchRate: 10
+  timeout-time: 90
+  restart-on-crash: true
+  restart-script: ./start.sh
+  netty-threads: -1
+  player-shuffle: 0
+  bungeecord: false
 messages:
   restart: Server is restarting
   whitelist: You are not whitelisted on this server!
@@ -38,12 +38,36 @@ stats:
 world-settings:
   default:
     verbose: false
+    nerf-spawner-mobs: false
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    random-light-updates: false
+    save-structure-info: true
     max-bulk-chunks: 5
     max-entity-collisions: 8
     max-tick-time:
       tile: 1000
       entity: 1000
     max-tnt-per-tick: 100
+    entity-tracking-range:
+      players: 48
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
     mob-spawn-range: 4
     anti-xray:
       enabled: false
@@ -65,38 +89,14 @@ world-settings:
       replace-blocks:
       - 1
       - 5
-    nerf-spawner-mobs: false
-    growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      wheat-modifier: 100
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
-    entity-tracking-range:
-      players: 48
-      animals: 48
-      monsters: 48
-      misc: 32
-      other: 64
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 8
-    random-light-updates: false
-    save-structure-info: true
-    enable-zombie-pigmen-portal-spawns: true
+    use-async-lighting: false
     arrow-despawn-rate: 1200
-    view-distance: 10
-    chunks-per-tick: 650
-    clear-tick-list: false
     item-despawn-rate: 6000
     merge-radius:
       item: 2.5
       exp: 3.0
-    use-async-lighting: false
+    chunks-per-tick: 650
+    clear-tick-list: false
+    view-distance: 10
+    enable-zombie-pigmen-portal-spawns: true
     zombie-aggressive-towards-villager: true

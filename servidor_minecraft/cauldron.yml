@@ -88,6 +88,9 @@ world-settings:
     allow-tnt-punishment: true
     infinite-water-source: true
     entity-despawn-immediate: false
+    worldgen-MCA-SimpleOreGenerator: true
+    worldgen-jinryuudragonblockc-WorldGeneratorDB: true
+    worldgen-DBCSkins-DBCSkins: true
   max-players-visible: -1
   use-real-names: false
 protection:
@@ -112,3 +115,15 @@ world-environment-settings:
     keep-world-loaded: true
   the_end:
     keep-world-loaded: false
+  x0namek:
+    keep-world-loaded: true
+  x3vegeta:
+    keep-world-loaded: true
+  x1ow:
+    keep-world-loaded: true
+  x2tc:
+    keep-world-loaded: true
+  x2nullrealm:
+    keep-world-loaded: true
+  wyvernend:
+    keep-world-loaded: true
