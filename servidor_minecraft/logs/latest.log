@@ -1131,3 +1131,15 @@ Caused by: java.lang.IllegalArgumentException
 [13:13:03] [Server thread/INFO]: lii[/127.134.252.159:43377] logged in with entity id 286 at ([world] 70.19629823253169, 217.0, 55.28177137026671)
 [13:20:46] [Server thread/INFO]: lii issued server command: /gamemode survival
 [13:20:46] [Server thread/INFO]: lii: Set own game mode to SURVIVAL mode[m
+[13:29:51] [Server thread/INFO]: lii issued server command: /give lii beaf
+[13:29:51] [Server thread/INFO]: lii: Gave lii some 0 (AIR)[m
+[13:29:57] [Server thread/INFO]: lii issued server command: /give lii cooked_beaf
+[13:29:57] [Server thread/INFO]: lii: Gave lii some 0 (AIR)[m
+[13:30:04] [Server thread/INFO]: lii issued server command: /give lii minecraft:cooked_beaf
+[13:30:04] [Server thread/INFO]: lii: Gave lii some 0 (AIR)[m
+[13:30:07] [Server thread/INFO]: lii issued server command: /give lii minecraft:124
+[13:30:07] [Server thread/INFO]: lii: Gave lii some 0 (AIR)[m
+[13:30:25] [Server thread/INFO]: lii issued server command: /give lii 4338
+[13:30:25] [Server thread/INFO]: lii: Gave lii some 4338 (JINRYUUDRAGONBLOCKC_ITEMDINOMEATCOOKEDBIG)[m
+[13:30:28] [Server thread/INFO]: lii issued server command: /give lii 4338 32
+[13:30:28] [Server thread/INFO]: lii: Gave lii some 4338 (JINRYUUDRAGONBLOCKC_ITEMDINOMEATCOOKEDBIG)[m

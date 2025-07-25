@@ -134,6 +134,18 @@ world-settings:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
+    JinRyuu-JRMCore-entity-EntityNPCshadow:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    net-minecraft-entity-item-EntityXPOrb:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    JinRyuu-DragonBC-common-Npcs-dbredribbon-EntityMajorMetallitron:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
     JinRyuu-DragonBC-common-Npcs-EntityNamekFrog:
       tick-no-players: false
       never-ever-tick: false
@@ -191,10 +203,6 @@ world-settings:
       never-ever-tick: false
       tick-interval: 1
     JinRyuu-DragonBC-common-Npcs-EntityMasterGohan:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    net-minecraft-entity-item-EntityXPOrb:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
