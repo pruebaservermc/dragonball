@@ -1,4 +1,4 @@
-// class version 50.0 (50)
+// class version 52.0 (52)
 // access flags 0x21
 public class dh extends dy  {
 
@@ -7,13 +7,17 @@ public class dh extends dy  {
   INNERCLASS dj null null
   // access flags 0x0
   INNERCLASS di null null
+  // access flags 0x609
+  public static abstract INNERCLASS java/util/Map$Entry java/util/Map Entry
   // access flags 0x409
-  public static abstract INNERCLASS dz dy NBTPrimitive
+  public static abstract INNERCLASS dz dy dz
 
   // access flags 0x1A
   private final static Lorg/apache/logging/log4j/Logger; b
 
   // access flags 0x2
+  // signature Ljava/util/Map<Ljava/lang/String;Ldy;>;
+  // declaration: java.util.Map<java.lang.String, dy>
   private Ljava/util/Map; c
 
   // access flags 0x1A
@@ -22,45 +26,73 @@ public class dh extends dy  {
   // access flags 0x1
   public <init>()V
    L0
-    LINENUMBER 17 L0
+    LINENUMBER 25 L0
+    ALOAD 0
+    ICONST_0
+    INVOKESPECIAL dh.<init> (Z)V
+   L1
+    LINENUMBER 26 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Ldh; L0 L2 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public <init>(Z)V
+   L0
+    LINENUMBER 29 L0
     ALOAD 0
     INVOKESPECIAL dy.<init> ()V
    L1
     LINENUMBER 20 L1
     ALOAD 0
+    ACONST_NULL
+    PUTFIELD dh.c : Ljava/util/Map;
+   L2
+    LINENUMBER 30 L2
+    ILOAD 1
+    IFNE L3
+   L4
+    LINENUMBER 32 L4
+    ALOAD 0
     NEW java/util/HashMap
     DUP
     INVOKESPECIAL java/util/HashMap.<init> ()V
     PUTFIELD dh.c : Ljava/util/Map;
+   L3
+    LINENUMBER 34 L3
+   FRAME FULL [dh I] []
     RETURN
-   L2
-    LOCALVARIABLE this Ldh; L0 L2 0
+   L5
+    LOCALVARIABLE this Ldh; L0 L5 0
+    LOCALVARIABLE _copy Z L0 L5 1
     MAXSTACK = 3
-    MAXLOCALS = 1
+    MAXLOCALS = 2
 
   // access flags 0x0
   a(Ljava/io/DataOutput;)V throws java/io/IOException 
    L0
-    LINENUMBER 25 L0
+    LINENUMBER 38 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     INVOKEINTERFACE java/util/Map.keySet ()Ljava/util/Set;
     INVOKEINTERFACE java/util/Set.iterator ()Ljava/util/Iterator;
     ASTORE 2
    L1
-    LINENUMBER 27 L1
+    LINENUMBER 40 L1
    FRAME FULL [dh java/io/DataOutput java/util/Iterator] []
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.hasNext ()Z
     IFEQ L2
    L3
-    LINENUMBER 29 L3
+    LINENUMBER 42 L3
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
     CHECKCAST java/lang/String
     ASTORE 3
    L4
-    LINENUMBER 30 L4
+    LINENUMBER 43 L4
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 3
@@ -68,22 +100,22 @@ public class dh extends dy  {
     CHECKCAST dy
     ASTORE 4
    L5
-    LINENUMBER 31 L5
+    LINENUMBER 44 L5
     ALOAD 3
     ALOAD 4
     ALOAD 1
     INVOKESTATIC dh.a (Ljava/lang/String;Ldy;Ljava/io/DataOutput;)V
    L6
-    LINENUMBER 32 L6
+    LINENUMBER 45 L6
     GOTO L1
    L2
-    LINENUMBER 34 L2
+    LINENUMBER 47 L2
    FRAME FULL [dh java/io/DataOutput java/util/Iterator] []
     ALOAD 1
     ICONST_0
     INVOKEINTERFACE java/io/DataOutput.writeByte (I)V
    L7
-    LINENUMBER 35 L7
+    LINENUMBER 48 L7
     RETURN
    L8
     LOCALVARIABLE s Ljava/lang/String; L4 L6 3
@@ -97,25 +129,25 @@ public class dh extends dy  {
   // access flags 0x0
   a(Ljava/io/DataInput;ILds;)V throws java/io/IOException 
    L0
-    LINENUMBER 39 L0
+    LINENUMBER 52 L0
     ILOAD 2
     SIPUSH 512
     IF_ICMPLE L1
    L2
-    LINENUMBER 41 L2
+    LINENUMBER 54 L2
     NEW java/lang/RuntimeException
     DUP
     LDC "Tried to read NBT tag with too high complexity, depth > 512"
     INVOKESPECIAL java/lang/RuntimeException.<init> (Ljava/lang/String;)V
     ATHROW
    L1
-    LINENUMBER 45 L1
+    LINENUMBER 58 L1
    FRAME FULL [dh java/io/DataInput I ds] []
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     INVOKEINTERFACE java/util/Map.clear ()V
    L3
-    LINENUMBER 48 L3
+    LINENUMBER 61 L3
    FRAME FULL [dh java/io/DataInput I ds] []
     ALOAD 1
     ALOAD 3
@@ -125,18 +157,18 @@ public class dh extends dy  {
    L4
     IFEQ L5
    L6
-    LINENUMBER 50 L6
+    LINENUMBER 63 L6
     ALOAD 1
     ALOAD 3
     INVOKESTATIC dh.b (Ljava/io/DataInput;Lds;)Ljava/lang/String;
     ASTORE 5
    L7
-    LINENUMBER 51 L7
+    LINENUMBER 64 L7
     ALOAD 3
     ALOAD 5
     INVOKESTATIC ds.readUTF (Lds;Ljava/lang/String;)V
    L8
-    LINENUMBER 52 L8
+    LINENUMBER 65 L8
     ILOAD 4
     ALOAD 5
     ALOAD 1
@@ -147,7 +179,7 @@ public class dh extends dy  {
     INVOKESTATIC dh.a (BLjava/lang/String;Ljava/io/DataInput;ILds;)Ldy;
     ASTORE 6
    L9
-    LINENUMBER 53 L9
+    LINENUMBER 66 L9
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 5
@@ -155,10 +187,10 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L10
-    LINENUMBER 54 L10
+    LINENUMBER 67 L10
     GOTO L3
    L5
-    LINENUMBER 56 L5
+    LINENUMBER 69 L5
    FRAME FULL [dh java/io/DataInput I ds I] []
     RETURN
    L11
@@ -175,7 +207,7 @@ public class dh extends dy  {
   // access flags 0x1
   public c()Ljava/util/Set;
    L0
-    LINENUMBER 60 L0
+    LINENUMBER 73 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     INVOKEINTERFACE java/util/Map.keySet ()Ljava/util/Set;
@@ -188,7 +220,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a()B
    L0
-    LINENUMBER 65 L0
+    LINENUMBER 78 L0
     BIPUSH 10
     IRETURN
    L1
@@ -199,7 +231,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;Ldy;)V
    L0
-    LINENUMBER 70 L0
+    LINENUMBER 83 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -207,7 +239,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 71 L1
+    LINENUMBER 84 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -219,7 +251,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;B)V
    L0
-    LINENUMBER 75 L0
+    LINENUMBER 88 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -230,7 +262,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 76 L1
+    LINENUMBER 89 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -242,7 +274,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;S)V
    L0
-    LINENUMBER 80 L0
+    LINENUMBER 93 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -253,7 +285,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 81 L1
+    LINENUMBER 94 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -265,7 +297,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;I)V
    L0
-    LINENUMBER 85 L0
+    LINENUMBER 98 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -276,7 +308,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 86 L1
+    LINENUMBER 99 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -288,7 +320,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;J)V
    L0
-    LINENUMBER 90 L0
+    LINENUMBER 103 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -299,7 +331,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 91 L1
+    LINENUMBER 104 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -311,7 +343,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;F)V
    L0
-    LINENUMBER 95 L0
+    LINENUMBER 108 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -322,7 +354,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 96 L1
+    LINENUMBER 109 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -334,7 +366,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;D)V
    L0
-    LINENUMBER 100 L0
+    LINENUMBER 113 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -345,7 +377,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 101 L1
+    LINENUMBER 114 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -357,7 +389,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;Ljava/lang/String;)V
    L0
-    LINENUMBER 105 L0
+    LINENUMBER 118 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -368,7 +400,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 106 L1
+    LINENUMBER 119 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -380,7 +412,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;[B)V
    L0
-    LINENUMBER 110 L0
+    LINENUMBER 123 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -391,7 +423,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 111 L1
+    LINENUMBER 124 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -403,7 +435,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;[I)V
    L0
-    LINENUMBER 115 L0
+    LINENUMBER 128 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -414,7 +446,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 116 L1
+    LINENUMBER 129 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -426,7 +458,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;Z)V
    L0
-    LINENUMBER 120 L0
+    LINENUMBER 133 L0
     ALOAD 0
     ALOAD 1
     ILOAD 2
@@ -441,7 +473,7 @@ public class dh extends dy  {
     I2B
     INVOKEVIRTUAL dh.a (Ljava/lang/String;B)V
    L3
-    LINENUMBER 121 L3
+    LINENUMBER 134 L3
     RETURN
    L4
     LOCALVARIABLE this Ldh; L0 L4 0
@@ -453,7 +485,7 @@ public class dh extends dy  {
   // access flags 0x1
   public a(Ljava/lang/String;)Ldy;
    L0
-    LINENUMBER 125 L0
+    LINENUMBER 138 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -469,7 +501,7 @@ public class dh extends dy  {
   // access flags 0x1
   public b(Ljava/lang/String;)B
    L0
-    LINENUMBER 130 L0
+    LINENUMBER 143 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -477,7 +509,7 @@ public class dh extends dy  {
     CHECKCAST dy
     ASTORE 2
    L1
-    LINENUMBER 131 L1
+    LINENUMBER 144 L1
     ALOAD 2
     IFNULL L2
     ALOAD 2
@@ -499,7 +531,7 @@ public class dh extends dy  {
   // access flags 0x1
   public c(Ljava/lang/String;)Z
    L0
-    LINENUMBER 136 L0
+    LINENUMBER 149 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -514,13 +546,13 @@ public class dh extends dy  {
   // access flags 0x1
   public b(Ljava/lang/String;I)Z
    L0
-    LINENUMBER 141 L0
+    LINENUMBER 154 L0
     ALOAD 0
     ALOAD 1
     INVOKEVIRTUAL dh.b (Ljava/lang/String;)B
     ISTORE 3
    L1
-    LINENUMBER 142 L1
+    LINENUMBER 155 L1
     ILOAD 3
     ILOAD 2
     IF_ICMPNE L2
@@ -575,7 +607,7 @@ public class dh extends dy  {
   public d(Ljava/lang/String;)B
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 149 L0
+    LINENUMBER 162 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -595,11 +627,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [I]
     IRETURN
    L2
-    LINENUMBER 151 L2
+    LINENUMBER 164 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 153 L4
+    LINENUMBER 166 L4
     ICONST_0
     IRETURN
    L5
@@ -613,7 +645,7 @@ public class dh extends dy  {
   public e(Ljava/lang/String;)S
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 161 L0
+    LINENUMBER 174 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -633,11 +665,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [I]
     IRETURN
    L2
-    LINENUMBER 163 L2
+    LINENUMBER 176 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 165 L4
+    LINENUMBER 178 L4
     ICONST_0
     IRETURN
    L5
@@ -651,7 +683,7 @@ public class dh extends dy  {
   public f(Ljava/lang/String;)I
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 173 L0
+    LINENUMBER 186 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -671,11 +703,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [I]
     IRETURN
    L2
-    LINENUMBER 175 L2
+    LINENUMBER 188 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 177 L4
+    LINENUMBER 190 L4
     ICONST_0
     IRETURN
    L5
@@ -689,7 +721,7 @@ public class dh extends dy  {
   public g(Ljava/lang/String;)J
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 185 L0
+    LINENUMBER 198 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -709,11 +741,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [J]
     LRETURN
    L2
-    LINENUMBER 187 L2
+    LINENUMBER 200 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 189 L4
+    LINENUMBER 202 L4
     LCONST_0
     LRETURN
    L5
@@ -727,7 +759,7 @@ public class dh extends dy  {
   public h(Ljava/lang/String;)F
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 197 L0
+    LINENUMBER 210 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -747,11 +779,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [F]
     FRETURN
    L2
-    LINENUMBER 199 L2
+    LINENUMBER 212 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 201 L4
+    LINENUMBER 214 L4
     FCONST_0
     FRETURN
    L5
@@ -765,7 +797,7 @@ public class dh extends dy  {
   public i(Ljava/lang/String;)D
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 209 L0
+    LINENUMBER 222 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -785,11 +817,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [D]
     DRETURN
    L2
-    LINENUMBER 211 L2
+    LINENUMBER 224 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 213 L4
+    LINENUMBER 226 L4
     DCONST_0
     DRETURN
    L5
@@ -803,7 +835,7 @@ public class dh extends dy  {
   public j(Ljava/lang/String;)Ljava/lang/String;
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 221 L0
+    LINENUMBER 234 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -823,11 +855,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [java/lang/String]
     ARETURN
    L2
-    LINENUMBER 223 L2
+    LINENUMBER 236 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 225 L4
+    LINENUMBER 238 L4
     LDC ""
     ARETURN
    L5
@@ -841,7 +873,7 @@ public class dh extends dy  {
   public k(Ljava/lang/String;)[B
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 233 L0
+    LINENUMBER 246 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -862,11 +894,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [[B]
     ARETURN
    L2
-    LINENUMBER 235 L2
+    LINENUMBER 248 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 237 L4
+    LINENUMBER 250 L4
     NEW s
     DUP
     ALOAD 0
@@ -887,7 +919,7 @@ public class dh extends dy  {
   public l(Ljava/lang/String;)[I
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 245 L0
+    LINENUMBER 258 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -908,11 +940,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [[I]
     ARETURN
    L2
-    LINENUMBER 247 L2
+    LINENUMBER 260 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 249 L4
+    LINENUMBER 262 L4
     NEW s
     DUP
     ALOAD 0
@@ -933,7 +965,7 @@ public class dh extends dy  {
   public m(Ljava/lang/String;)Ldh;
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 257 L0
+    LINENUMBER 270 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
@@ -954,11 +986,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String] [dh]
     ARETURN
    L2
-    LINENUMBER 259 L2
+    LINENUMBER 272 L2
    FRAME FULL [dh java/lang/String] [java/lang/ClassCastException]
     ASTORE 2
    L4
-    LINENUMBER 261 L4
+    LINENUMBER 274 L4
     NEW s
     DUP
     ALOAD 0
@@ -980,21 +1012,21 @@ public class dh extends dy  {
     TRYCATCHBLOCK L0 L1 L2 java/lang/ClassCastException
     TRYCATCHBLOCK L3 L4 L2 java/lang/ClassCastException
    L0
-    LINENUMBER 269 L0
+    LINENUMBER 282 L0
     ALOAD 0
     ALOAD 1
     INVOKEVIRTUAL dh.b (Ljava/lang/String;)B
     BIPUSH 9
     IF_ICMPEQ L3
    L5
-    LINENUMBER 271 L5
+    LINENUMBER 284 L5
     NEW dq
     DUP
     INVOKESPECIAL dq.<init> ()V
    L1
     ARETURN
    L3
-    LINENUMBER 275 L3
+    LINENUMBER 288 L3
    FRAME FULL [dh java/lang/String I] []
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
@@ -1003,7 +1035,7 @@ public class dh extends dy  {
     CHECKCAST dq
     ASTORE 3
    L6
-    LINENUMBER 276 L6
+    LINENUMBER 289 L6
     ALOAD 3
     INVOKEVIRTUAL dq.c ()I
     IFLE L7
@@ -1022,11 +1054,11 @@ public class dh extends dy  {
    FRAME FULL [dh java/lang/String I dq] [dq]
     ARETURN
    L2
-    LINENUMBER 279 L2
+    LINENUMBER 292 L2
    FRAME FULL [dh java/lang/String I] [java/lang/ClassCastException]
     ASTORE 3
    L8
-    LINENUMBER 281 L8
+    LINENUMBER 294 L8
     NEW s
     DUP
     ALOAD 0
@@ -1048,7 +1080,7 @@ public class dh extends dy  {
   // access flags 0x1
   public n(Ljava/lang/String;)Z
    L0
-    LINENUMBER 287 L0
+    LINENUMBER 300 L0
     ALOAD 0
     ALOAD 1
     INVOKEVIRTUAL dh.d (Ljava/lang/String;)B
@@ -1070,14 +1102,14 @@ public class dh extends dy  {
   // access flags 0x1
   public o(Ljava/lang/String;)V
    L0
-    LINENUMBER 292 L0
+    LINENUMBER 305 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     ALOAD 1
     INVOKEINTERFACE java/util/Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
     POP
    L1
-    LINENUMBER 293 L1
+    LINENUMBER 306 L1
     RETURN
    L2
     LOCALVARIABLE this Ldh; L0 L2 0
@@ -1088,11 +1120,11 @@ public class dh extends dy  {
   // access flags 0x1
   public toString()Ljava/lang/String;
    L0
-    LINENUMBER 297 L0
+    LINENUMBER 310 L0
     LDC "{"
     ASTORE 1
    L1
-    LINENUMBER 300 L1
+    LINENUMBER 313 L1
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     INVOKEINTERFACE java/util/Map.keySet ()Ljava/util/Set;
@@ -1104,13 +1136,13 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Iterator.hasNext ()Z
     IFEQ L3
    L4
-    LINENUMBER 302 L4
+    LINENUMBER 315 L4
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
     CHECKCAST java/lang/String
     ASTORE 3
    L5
-    LINENUMBER 300 L5
+    LINENUMBER 313 L5
     NEW java/lang/StringBuilder
     DUP
     INVOKESPECIAL java/lang/StringBuilder.<init> ()V
@@ -1131,7 +1163,7 @@ public class dh extends dy  {
     ASTORE 1
     GOTO L2
    L3
-    LINENUMBER 305 L3
+    LINENUMBER 318 L3
    FRAME FULL [dh java/lang/String java/util/Iterator] []
     NEW java/lang/StringBuilder
     DUP
@@ -1154,7 +1186,7 @@ public class dh extends dy  {
   // access flags 0x1
   public d()Z
    L0
-    LINENUMBER 310 L0
+    LINENUMBER 323 L0
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     INVOKEINTERFACE java/util/Map.isEmpty ()Z
@@ -1167,20 +1199,20 @@ public class dh extends dy  {
   // access flags 0x2
   private a(Ljava/lang/String;ILjava/lang/ClassCastException;)Lb;
    L0
-    LINENUMBER 315 L0
+    LINENUMBER 328 L0
     ALOAD 3
     LDC "Reading NBT data"
     INVOKESTATIC b.a (Ljava/lang/Throwable;Ljava/lang/String;)Lb;
     ASTORE 4
    L1
-    LINENUMBER 316 L1
+    LINENUMBER 329 L1
     ALOAD 4
     LDC "Corrupt NBT tag"
     ICONST_1
     INVOKEVIRTUAL b.a (Ljava/lang/String;I)Lk;
     ASTORE 5
    L2
-    LINENUMBER 317 L2
+    LINENUMBER 330 L2
     ALOAD 5
     LDC "Tag type found"
     NEW di
@@ -1190,7 +1222,7 @@ public class dh extends dy  {
     INVOKESPECIAL di.<init> (Ldh;Ljava/lang/String;)V
     INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/util/concurrent/Callable;)V
    L3
-    LINENUMBER 325 L3
+    LINENUMBER 338 L3
     ALOAD 5
     LDC "Tag type expected"
     NEW dj
@@ -1200,13 +1232,13 @@ public class dh extends dy  {
     INVOKESPECIAL dj.<init> (Ldh;I)V
     INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/util/concurrent/Callable;)V
    L4
-    LINENUMBER 333 L4
+    LINENUMBER 346 L4
     ALOAD 5
     LDC "Tag name"
     ALOAD 1
     INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/lang/Object;)V
    L5
-    LINENUMBER 334 L5
+    LINENUMBER 347 L5
     ALOAD 4
     ARETURN
    L6
@@ -1222,72 +1254,86 @@ public class dh extends dy  {
   // access flags 0x1
   public b()Ldy;
    L0
-    LINENUMBER 339 L0
+    LINENUMBER 352 L0
     NEW dh
     DUP
-    INVOKESPECIAL dh.<init> ()V
+    ICONST_1
+    INVOKESPECIAL dh.<init> (Z)V
     ASTORE 1
    L1
-    LINENUMBER 340 L1
+    LINENUMBER 353 L1
+    ALOAD 1
+    NEW java/util/HashMap
+    DUP
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
-    INVOKEINTERFACE java/util/Map.keySet ()Ljava/util/Set;
+    INVOKEINTERFACE java/util/Map.size ()I
+    I2D
+    LDC 1.35
+    DMUL
+    D2I
+    ICONST_1
+    IADD
+    INVOKESPECIAL java/util/HashMap.<init> (I)V
+    PUTFIELD dh.c : Ljava/util/Map;
+   L2
+    LINENUMBER 355 L2
+    ALOAD 0
+    GETFIELD dh.c : Ljava/util/Map;
+    INVOKEINTERFACE java/util/Map.entrySet ()Ljava/util/Set;
     INVOKEINTERFACE java/util/Set.iterator ()Ljava/util/Iterator;
     ASTORE 2
-   L2
-    LINENUMBER 342 L2
+   L3
    FRAME FULL [dh dh java/util/Iterator] []
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.hasNext ()Z
-    IFEQ L3
-   L4
-    LINENUMBER 344 L4
+    IFEQ L4
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
-    CHECKCAST java/lang/String
+    CHECKCAST java/util/Map$Entry
     ASTORE 3
    L5
-    LINENUMBER 345 L5
+    LINENUMBER 356 L5
     ALOAD 1
     ALOAD 3
-    ALOAD 0
-    GETFIELD dh.c : Ljava/util/Map;
+    INVOKEINTERFACE java/util/Map$Entry.getKey ()Ljava/lang/Object;
+    CHECKCAST java/lang/String
     ALOAD 3
-    INVOKEINTERFACE java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    INVOKEINTERFACE java/util/Map$Entry.getValue ()Ljava/lang/Object;
     CHECKCAST dy
     INVOKEVIRTUAL dy.b ()Ldy;
     INVOKEVIRTUAL dh.a (Ljava/lang/String;Ldy;)V
    L6
-    LINENUMBER 346 L6
-    GOTO L2
-   L3
-    LINENUMBER 348 L3
+    GOTO L3
+   L4
+    LINENUMBER 358 L4
    FRAME FULL [dh dh java/util/Iterator] []
     ALOAD 1
     ARETURN
    L7
-    LOCALVARIABLE s Ljava/lang/String; L5 L6 3
+    LOCALVARIABLE s Ljava/util/Map$Entry; L5 L6 3
+    // signature Ljava/util/Map$Entry<Ljava/lang/String;Ldy;>;
+    // declaration: java.util.Map$Entry<java.lang.String, dy>
     LOCALVARIABLE this Ldh; L0 L7 0
     LOCALVARIABLE nbttagcompound Ldh; L1 L7 1
-    LOCALVARIABLE iterator Ljava/util/Iterator; L2 L7 2
-    MAXSTACK = 4
+    MAXSTACK = 7
     MAXLOCALS = 4
 
   // access flags 0x1
   public equals(Ljava/lang/Object;)Z
    L0
-    LINENUMBER 353 L0
+    LINENUMBER 363 L0
     ALOAD 0
     ALOAD 1
     INVOKESPECIAL dy.equals (Ljava/lang/Object;)Z
     IFEQ L1
    L2
-    LINENUMBER 355 L2
+    LINENUMBER 365 L2
     ALOAD 1
     CHECKCAST dh
     ASTORE 2
    L3
-    LINENUMBER 356 L3
+    LINENUMBER 366 L3
     ALOAD 0
     GETFIELD dh.c : Ljava/util/Map;
     INVOKEINTERFACE java/util/Map.entrySet ()Ljava/util/Set;
@@ -1297,7 +1343,7 @@ public class dh extends dy  {
     INVOKEINTERFACE java/util/Set.equals (Ljava/lang/Object;)Z
     IRETURN
    L1
-    LINENUMBER 360 L1
+    LINENUMBER 370 L1
    FRAME FULL [dh java/lang/Object] []
     ICONST_0
     IRETURN
@@ -1311,7 +1357,7 @@ public class dh extends dy  {
   // access flags 0x1
   public hashCode()I
    L0
-    LINENUMBER 366 L0
+    LINENUMBER 376 L0
     ALOAD 0
     INVOKESPECIAL dy.hashCode ()I
     ALOAD 0
@@ -1327,28 +1373,28 @@ public class dh extends dy  {
   // access flags 0xA
   private static a(Ljava/lang/String;Ldy;Ljava/io/DataOutput;)V throws java/io/IOException 
    L0
-    LINENUMBER 371 L0
+    LINENUMBER 381 L0
     ALOAD 2
     ALOAD 1
     INVOKEVIRTUAL dy.a ()B
     INVOKEINTERFACE java/io/DataOutput.writeByte (I)V
    L1
-    LINENUMBER 373 L1
+    LINENUMBER 383 L1
     ALOAD 1
     INVOKEVIRTUAL dy.a ()B
     IFEQ L2
    L3
-    LINENUMBER 375 L3
+    LINENUMBER 385 L3
     ALOAD 2
     ALOAD 0
     INVOKEINTERFACE java/io/DataOutput.writeUTF (Ljava/lang/String;)V
    L4
-    LINENUMBER 376 L4
+    LINENUMBER 386 L4
     ALOAD 1
     ALOAD 2
     INVOKEVIRTUAL dy.a (Ljava/io/DataOutput;)V
    L2
-    LINENUMBER 378 L2
+    LINENUMBER 388 L2
    FRAME FULL [java/lang/String dy java/io/DataOutput] []
     RETURN
    L5
@@ -1361,12 +1407,12 @@ public class dh extends dy  {
   // access flags 0xA
   private static a(Ljava/io/DataInput;Lds;)B throws java/io/IOException 
    L0
-    LINENUMBER 382 L0
+    LINENUMBER 392 L0
     ALOAD 1
     LDC 8
     INVOKEVIRTUAL ds.a (J)V
    L1
-    LINENUMBER 383 L1
+    LINENUMBER 393 L1
     ALOAD 0
     INVOKEINTERFACE java/io/DataInput.readByte ()B
     IRETURN
@@ -1379,7 +1425,7 @@ public class dh extends dy  {
   // access flags 0xA
   private static b(Ljava/io/DataInput;Lds;)Ljava/lang/String; throws java/io/IOException 
    L0
-    LINENUMBER 388 L0
+    LINENUMBER 398 L0
     ALOAD 0
     INVOKEINTERFACE java/io/DataInput.readUTF ()Ljava/lang/String;
     ARETURN
@@ -1393,58 +1439,58 @@ public class dh extends dy  {
   static a(BLjava/lang/String;Ljava/io/DataInput;ILds;)Ldy;
     TRYCATCHBLOCK L0 L1 L2 java/io/IOException
    L3
-    LINENUMBER 393 L3
+    LINENUMBER 403 L3
     ALOAD 4
     LDC 32
     INVOKEVIRTUAL ds.a (J)V
    L4
-    LINENUMBER 394 L4
+    LINENUMBER 404 L4
     ILOAD 0
     INVOKESTATIC dy.a (B)Ldy;
     ASTORE 5
    L0
-    LINENUMBER 398 L0
+    LINENUMBER 408 L0
     ALOAD 5
     ALOAD 2
     ILOAD 3
     ALOAD 4
     INVOKEVIRTUAL dy.a (Ljava/io/DataInput;ILds;)V
    L5
-    LINENUMBER 399 L5
+    LINENUMBER 409 L5
     ALOAD 5
    L1
     ARETURN
    L2
-    LINENUMBER 401 L2
+    LINENUMBER 411 L2
    FRAME FULL [I java/lang/String java/io/DataInput I ds dy] [java/io/IOException]
     ASTORE 6
    L6
-    LINENUMBER 403 L6
+    LINENUMBER 413 L6
     ALOAD 6
     LDC "Loading NBT data"
     INVOKESTATIC b.a (Ljava/lang/Throwable;Ljava/lang/String;)Lb;
     ASTORE 7
    L7
-    LINENUMBER 404 L7
+    LINENUMBER 414 L7
     ALOAD 7
     LDC "NBT Tag"
     INVOKEVIRTUAL b.a (Ljava/lang/String;)Lk;
     ASTORE 8
    L8
-    LINENUMBER 405 L8
+    LINENUMBER 415 L8
     ALOAD 8
     LDC "Tag name"
     ALOAD 1
     INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/lang/Object;)V
    L9
-    LINENUMBER 406 L9
+    LINENUMBER 416 L9
     ALOAD 8
     LDC "Tag type"
     ILOAD 0
     INVOKESTATIC java/lang/Byte.valueOf (B)Ljava/lang/Byte;
     INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/lang/Object;)V
    L10
-    LINENUMBER 407 L10
+    LINENUMBER 417 L10
     NEW s
     DUP
     ALOAD 7

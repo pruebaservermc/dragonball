@@ -10,6 +10,8 @@ EntityHorse
 Ghast
 Giant
 LavaSlime
+MCA.EntityGrimReaper
+MCA.EntityHuman
 Mob
 Monster
 MushroomCow

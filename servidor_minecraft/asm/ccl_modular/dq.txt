@@ -1,10 +1,12 @@
-// class version 50.0 (50)
+// class version 52.0 (52)
 // access flags 0x21
 public class dq extends dy  {
 
   // compiled from: NBTTagList.java
 
   // access flags 0x2
+  // signature Ljava/util/List<Ldy;>;
+  // declaration: java.util.List<dy>
   private Ljava/util/List; b
 
   // access flags 0x2
@@ -690,48 +692,60 @@ public class dq extends dy  {
     PUTFIELD dq.c : B
    L2
     LINENUMBER 195 L2
+    ALOAD 1
+    GETFIELD dq.b : Ljava/util/List;
+    INSTANCEOF java/util/ArrayList
+    IFEQ L3
+   L4
+    LINENUMBER 196 L4
+    ALOAD 1
+    GETFIELD dq.b : Ljava/util/List;
+    CHECKCAST java/util/ArrayList
+    ALOAD 0
+    GETFIELD dq.b : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    INVOKEVIRTUAL java/util/ArrayList.ensureCapacity (I)V
+   L3
+    LINENUMBER 198 L3
+   FRAME FULL [dq dq] []
     ALOAD 0
     GETFIELD dq.b : Ljava/util/List;
     INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
     ASTORE 2
-   L3
-    LINENUMBER 197 L3
+   L5
    FRAME FULL [dq dq java/util/Iterator] []
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.hasNext ()Z
-    IFEQ L4
-   L5
-    LINENUMBER 199 L5
+    IFEQ L6
     ALOAD 2
     INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
     CHECKCAST dy
     ASTORE 3
-   L6
-    LINENUMBER 200 L6
+   L7
+    LINENUMBER 200 L7
     ALOAD 3
     INVOKEVIRTUAL dy.b ()Ldy;
     ASTORE 4
-   L7
-    LINENUMBER 201 L7
+   L8
+    LINENUMBER 201 L8
     ALOAD 1
     GETFIELD dq.b : Ljava/util/List;
     ALOAD 4
     INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
     POP
-   L8
-    LINENUMBER 202 L8
-    GOTO L3
-   L4
-    LINENUMBER 204 L4
+   L9
+    LINENUMBER 202 L9
+    GOTO L5
+   L6
+    LINENUMBER 204 L6
    FRAME FULL [dq dq java/util/Iterator] []
     ALOAD 1
     ARETURN
-   L9
-    LOCALVARIABLE nbtbase Ldy; L6 L8 3
-    LOCALVARIABLE nbtbase1 Ldy; L7 L8 4
-    LOCALVARIABLE this Ldq; L0 L9 0
-    LOCALVARIABLE nbttaglist Ldq; L1 L9 1
-    LOCALVARIABLE iterator Ljava/util/Iterator; L3 L9 2
+   L10
+    LOCALVARIABLE nbtbase1 Ldy; L8 L9 4
+    LOCALVARIABLE nbtbase Ldy; L7 L9 3
+    LOCALVARIABLE this Ldq; L0 L10 0
+    LOCALVARIABLE nbttaglist Ldq; L1 L10 1
     MAXSTACK = 2
     MAXLOCALS = 5
 
