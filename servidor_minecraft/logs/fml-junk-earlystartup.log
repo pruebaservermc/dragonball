@@ -149,3 +149,4 @@ Caused by: java.lang.ClassNotFoundException: pw.prok.imagine.ImaginePoxy
 [09:05:14] [Netty IO #0/INFO] []: <lii> xd[m
 [09:06:11] [Server thread/INFO] []: CONSOLE: Opped lii[m
 [09:06:24] [Server thread/INFO] []: lii: Set own game mode to CREATIVE mode[m
+[09:22:24] [Server thread/INFO] []: lii: Successfully set the idle timeout to 30 minutes.[m
