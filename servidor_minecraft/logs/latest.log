@@ -22,3 +22,5 @@
 [11:43:15] [Server thread/INFO]: Done (24.650s)! For help, type "help" or "?"
 [11:43:51] [Server thread/INFO]: lii[/127.134.252.159:33731] logged in with entity id 2119 at (165.5, 63.0, 237.5)
 [11:43:51] [Server thread/INFO]: lii joined the game
+[12:02:06] [Server thread/INFO]: lii lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[12:02:06] [Server thread/INFO]: lii left the game
