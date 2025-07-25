@@ -190,3 +190,10 @@ Caused by: java.lang.ClassNotFoundException: pw.prok.imagine.ImaginePoxy
 [08:58:04] [Server thread/INFO]: [Server thread] Server side modded connection established
 [08:58:04] [Server thread/INFO]: lii[/127.134.252.159:42739] logged in with entity id 3037 at ([world] -184.5, 69.0, 224.5)
 [09:03:54] [Server thread/INFO]: lii has just earned the achievement [Taking Inventory]
+[09:05:13] [Server thread/INFO]: lii issued server command: /gamemode creative
+[09:05:14] [Netty IO #0/INFO]: <lii> xd[m
+[09:05:54] [Server thread/INFO]: lii issued server command: /op
+[09:06:11] [Server thread/INFO]: CONSOLE: Opped lii[m
+[09:06:17] [Server thread/INFO]: lii issued server command: /op
+[09:06:24] [Server thread/INFO]: lii issued server command: /gamemode 1
+[09:06:24] [Server thread/INFO]: lii: Set own game mode to CREATIVE mode[m
