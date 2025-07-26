@@ -38,29 +38,6 @@ stats:
 world-settings:
   default:
     verbose: false
-    growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      wheat-modifier: 100
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 8
-    random-light-updates: false
-    save-structure-info: true
-    max-bulk-chunks: 5
-    max-entity-collisions: 8
-    max-tick-time:
-      tile: 1000
-      entity: 1000
-    max-tnt-per-tick: 100
     entity-tracking-range:
       players: 48
       animals: 48
@@ -89,13 +66,36 @@ world-settings:
       - 1
       - 5
     nerf-spawner-mobs: false
-    view-distance: 10
-    chunks-per-tick: 650
-    clear-tick-list: false
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    random-light-updates: false
+    save-structure-info: true
+    max-bulk-chunks: 5
+    max-entity-collisions: 8
+    max-tick-time:
+      tile: 1000
+      entity: 1000
+    max-tnt-per-tick: 100
+    use-async-lighting: false
     merge-radius:
       exp: 3.0
       item: 2.5
-    use-async-lighting: false
+    view-distance: 10
+    chunks-per-tick: 650
+    clear-tick-list: false
     item-despawn-rate: 6000
     enable-zombie-pigmen-portal-spawns: true
     arrow-despawn-rate: 1200

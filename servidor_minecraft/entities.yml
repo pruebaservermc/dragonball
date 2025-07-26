@@ -34,15 +34,47 @@ world-settings:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
+    net-minecraft-entity-monster-EntityCreeper:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    net-minecraft-entity-monster-EntityZombie:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    net-minecraft-entity-monster-EntitySkeleton:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
     net-minecraft-entity-passive-EntityCow:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
-    JinRyuu-DragonBC-common-Npcs-EntityMasterWhis:
+    net-minecraft-entity-player-EntityPlayerMP:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
-    net-minecraft-entity-player-EntityPlayerMP:
+    JinRyuu-DragonBC-common-Npcs-db-EntityBearThief:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    net-minecraft-entity-monster-EntitySpider:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    JinRyuu-DragonBC-common-Npcs-EntitySabertooth:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    net-minecraft-entity-monster-EntityEnderman:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    net-minecraft-entity-passive-EntityBat:
+      tick-no-players: false
+      never-ever-tick: false
+      tick-interval: 1
+    JinRyuu-DragonBC-common-Npcs-EntityMasterWhis:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
@@ -70,31 +102,7 @@ world-settings:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
-    net-minecraft-entity-monster-EntityCreeper:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    net-minecraft-entity-monster-EntityZombie:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    net-minecraft-entity-monster-EntitySkeleton:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    net-minecraft-entity-monster-EntitySpider:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
     JinRyuu-DragonBC-common-Npcs-dbredribbon-EntityRedRibbonSoldierB2:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    net-minecraft-entity-monster-EntityEnderman:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    net-minecraft-entity-passive-EntityBat:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
@@ -187,14 +195,6 @@ world-settings:
       never-ever-tick: false
       tick-interval: 1
     JinRyuu-DragonBC-common-Npcs-db-EntityTigerBandit:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    JinRyuu-DragonBC-common-Npcs-EntitySabertooth:
-      tick-no-players: false
-      never-ever-tick: false
-      tick-interval: 1
-    JinRyuu-DragonBC-common-Npcs-db-EntityBearThief:
       tick-no-players: false
       never-ever-tick: false
       tick-interval: 1
