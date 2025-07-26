@@ -8522,3 +8522,4 @@ Caused by: java.lang.IllegalArgumentException
 [21:27:52] [Server thread/INFO] [jinryuujrmcore]: Converting ended in success!
 [21:36:23] [Server thread/INFO] []: CONSOLE: Opped lichu[m
 [21:36:31] [Server thread/INFO] []: lichu: Set own game mode to CREATIVE mode[m
+[21:40:30] [Server thread/INFO] []: lichu: Set own game mode to SURVIVAL mode[m

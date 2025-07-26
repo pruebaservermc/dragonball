@@ -107,9 +107,9 @@ world-settings:
     allow-tnt-punishment: true
     infinite-water-source: true
     entity-despawn-immediate: false
-    worldgen-MCA-SimpleOreGenerator: true
-    worldgen-jinryuudragonblockc-WorldGeneratorDB: true
     worldgen-DBCSkins-DBCSkins: true
+    worldgen-jinryuudragonblockc-WorldGeneratorDB: true
+    worldgen-MCA-SimpleOreGenerator: true
   max-players-visible: -1
   use-real-names: false
 protection:
