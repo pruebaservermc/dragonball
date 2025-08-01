@@ -2,11 +2,13 @@
   {
     "uuid": "0a7ec9af-923a-3dd7-b087-164923332442",
     "name": "lii",
-    "level": 4
+    "level": 4,
+    "bypassesPlayerLimit": false
   },
   {
-    "uuid": "d0b77434-55aa-3a31-97c4-e093a15cec37",
-    "name": "lichu",
-    "level": 4
+    "uuid": "d2d62497-8106-3271-806f-1310edafc316",
+    "name": "_chevrolet",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]
